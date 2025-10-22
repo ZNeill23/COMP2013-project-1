@@ -38,60 +38,56 @@
 }
 
 .GroceriesApp-Container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-
-  /* max-width: 800px; */
-  /* border: 1px solid white; */
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .CartContainer {
   width: 25%;
   justify-content: center;
-
-  /* position: sticky; */
-  /* top: 0; Adjust this value as needed */
-  /* max-height: 100vh; Ensure it doesn't exceed the viewport height */
-  /* overflow-y: auto; Add scroll if content exceeds the container height */
-
-  /* border: 1px solid white; */
 }
 
 .CartCard {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
-  /* flex-wrap: wrap; */
   border: 2px wheat solid;
   border-radius: 10px;
   margin: 10px;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 8px;
   background-color: rgb(43, 48, 54);
 }
 
 .CartCardInfo {
-  /* display: flex;
-  justify-content: space-around; */
+  align-items: center;
   width: 50%;
+  padding: 0px;
 }
 
 .ProductsContainer {
   width: 75%;
   max-width: 800px;
   display: flex;
+  flex-direction: row;
+  row-gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 1px solid white; */
+  margin-top: 15px;
 }
 
 .ProductCard {
   width: 20%;
+  display: inline-block;
   border: 2px wheat solid;
   border-radius: 10px;
   margin: 10px;
-  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 312px;
 }
 
 .ProductQuantityDiv {
@@ -121,13 +117,13 @@ img {
 }
 
 .counter-container {
-  /* border: 1px solid white; */
   display: flex;
   width: 70%;
   height: 20px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 5px auto;
+  gap: 10px;
 }
 
 .counter-button {
@@ -147,7 +143,7 @@ img {
   background-color: rgb(190, 0, 0);
 }
 
-#BuyButton {
+.BuyButton {
   background-color: green;
   width: 50%;
 }
